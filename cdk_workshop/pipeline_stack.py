@@ -5,7 +5,7 @@ from aws_cdk import (
 )
 from cdk_workshop.pipeline_stage import WorkshopPipelineStage
 class WorkshopPipelineStack(Stack):
-
+    
     def __init__(self, scope: Construct, id: str, **kwargs) -> None:
         super().__init__(scope, id, **kwargs)
         # Creates a CodeCommit repository called 'WorkshopRepo'
